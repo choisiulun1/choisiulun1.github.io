@@ -12,7 +12,7 @@ $G$, i.e., mappings $G \times G \rightarrow G$ that only operate on elements in 
 
 
 >[!info] 
->Exists a Set $V$ with inner operation $+$ and outer operation  , which $(V,+)$ is a [[Groups#Abelian Group|Abelian Group]] supporting *Associativity* , *Distributivity* , *Identity Element* , *Inverse Element* $(-v)$ , *Communtativity* (for $+$).
+>Exists a Set $V$ with inner operation $+$ and outer operation  , which $(V,+)$ is a [[Group#Abelian Group | Abelian Group]] supporting *Associativity* , *Distributivity* , *Identity Element* , *Inverse Element* $(-v)$ , *Communtativity* (for $+$).
 
 Also define *Distributivity* , *Asscociativity* and *Netural Element* for scalar
 
@@ -31,11 +31,10 @@ If $U \subseteq V$ and $V$ is a vector space, then $U$ naturally inherits many p
 	- With respect to the inner operation: $\forall x, y \in U : x + y \in U$
 
 
-```ad-note
-title:$A \mathbf{x} = 0$ is a Subspace
-The solution set of a homogeneous system of linear equations : $A \mathbf{x} = 0$ with $n$ unknowns $\mathbf{x} = [x_1, \ldots, x_n]^\top$ is a subspace of $\mathbb{R}^n$
+>title:$A \mathbf{x} = 0$ is a Subspace
+>The solution set of a homogeneous system of linear equations : $A \mathbf{x} = 0$ with $n$ unknowns $\mathbf{x} = [x_1, \ldots, x_n]^\top$ is a subspace of $\mathbb{R}^n$
 
-**Contains the Zero Vector:**
+>**Contains the Zero Vector:**
 
 The zero vector $\mathbf{0}$ in $\mathbb{R}^n$ is a solution to $A \mathbf{0} = 0$. Hence, the zero vector is in the solution set.
 
@@ -55,4 +54,3 @@ We need to show that $\lambda \mathbf{x}$ is also a solution. Consider:
 $A (\lambda \mathbf{x}) = \lambda A \mathbf{x} = \lambda 0 = 0$
 Hence, $\lambda \mathbf{x}$ is in the solution set, proving closure under scalar multiplication.
 
-```
