@@ -18,17 +18,13 @@ kanban-plugin: basic
 
 ## Events
 
-- [ ] [[Registration]] @[[2024-07-24]]
-- [ ] [[US VISA]] @[[2024-07-25]]
 
 
 ***
 
 ## Archive
 
-- [ ] ELEC1200 Project @[[2022-12-02]]
-- [ ] COMP2611 Programming Project @[[2022-11-30]]
-- [ ] COMP2611 AS4 @[[2022-11-26]]
+
 
 %% kanban:settings
 ```
