@@ -1,0 +1,2 @@
+- group add (...) , don't add \(....\)
+- use $1 to get group 1 instead of using \1

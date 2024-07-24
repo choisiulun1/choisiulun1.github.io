@@ -1,0 +1,11 @@
+- Modernism
+	- phrase 1
+	- Adolf Loos - Ornament and Crime
+	- Raumplan - new method of spatial composition - varied according to the funcional requirement on different floors
+	- avant-garde
+	- Expressionism
+		- its freedom of thought and innovative use of forms and materials
+		- These works reflect a bold departure from traditional architectural forms, embracing more abstract and expressive designs​
+	- Neubau - germant
+	- phrase 2
+	- Le Corbusier - Towards a New Architecture , 5 Points of Architecture
