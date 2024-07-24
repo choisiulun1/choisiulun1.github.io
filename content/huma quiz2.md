@@ -1,5 +1,0 @@
-- lombard bands
-- blind arcades
-- dwarf galleries
-- quadripartite
-- sexpartite
