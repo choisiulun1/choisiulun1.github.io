@@ -9,16 +9,16 @@ Consider a set $G$ and an operation $\otimes : G \times G \to G$ defined on $G$.
 3. **Neutral element**: $\exists e \in G$ such that $\forall x \in G : x \otimes e = x$ and $e \otimes x = x$
 4. **Inverse element**: $\forall x \in G \exists y \in G : x \otimes y = e$ and $y \otimes x = e$, where $e$ is the neutral element. We often write $x^{-1}$ to denote the inverse element of $x$.
 
-```ad-example
-$U = \{ (x,y) \mid x,y \in \mathbb{R}, \, x + y = 1 \}$
 
-Closure under addition: If you take two vectors $(1,0)$ and $(0,1)$ from this set, their sum is
+>[!example] 
+>$U = \{ (x,y) \mid x,y \in \mathbb{R}, \, x + y = 1 \}$
+>
+>Closure under addition: If you take two vectors $(1,0)$ and $(0,1)$ from this set, their sum is
+>
+>$$(1,0) + (0,1) = (1,1)$$
+>
+>which does not satisfy $x + y = 1$. Therefore, the set is not closed under addition.
 
-$$(1,0) + (0,1) = (1,1)$$
-
-which does not satisfy $x + y = 1$. Therefore, the set is not closed under addition.
-
-```
 
 
 ---

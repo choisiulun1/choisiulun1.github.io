@@ -1,12 +1,12 @@
 ## Definition
 When we discussed groups, we looked at sets $G$ and inner operations on
 $G$, i.e., mappings $G \times G \rightarrow G$ that only operate on elements in $G$. In the following, we will consider sets that in addition to an inner operation $+$ also contain an outer operation , the multiplication of a vector $x \in G$ by a scalar $\lambda \in \mathbb{R}$. We can think of the inner operation as a form of addition, and the outer operation as a form of scaling. Note that the inner/outer operations have nothing to do with inner/outer products.
-1. $(V, +)$ is an ![[Group#Abelian Group]]
-2. Distributivity:
+1. $(V, +)$ is an [[Group#Abelian Group | Abelian Group]]
+3. Distributivity:
 	- $\forall \lambda \in \mathbb{R}, x, y \in V : \lambda \cdot (x + y) = \lambda \cdot x + \lambda \cdot y$
 	- $\forall \lambda, \psi \in \mathbb{R}, x \in V : (\lambda + \psi) \cdot x = \lambda \cdot x + \psi \cdot x$
-3. Associativity (outer operation): $\forall \lambda, \psi \in \mathbb{R}, x \in V : \lambda \cdot (\psi \cdot x) = (\lambda \psi) \cdot x$
-4. Neutral element with respect to the outer operation: $\forall x \in V : 1 \cdot x = x$
+4. Associativity (outer operation): $\forall \lambda, \psi \in \mathbb{R}, x \in V : \lambda \cdot (\psi \cdot x) = (\lambda \psi) \cdot x$
+5. Neutral element with respect to the outer operation: $\forall x \in V : 1 \cdot x = x$
 
 > There is no meaningful definition of the inverse element for scalar operation
 
