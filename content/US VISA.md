@@ -1,3 +1,0 @@
-- Confirmation Letter [[AC.pdf]]
-- DS-160 [[visa_confirmation.pdf]]
-- 
