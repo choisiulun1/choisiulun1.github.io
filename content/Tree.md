@@ -1,5 +1,0 @@
----
-tags: [Data Structure]
-aliases: []
----
-
