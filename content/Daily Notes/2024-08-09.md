@@ -1,0 +1,8 @@
+---
+tags: 
+aliases: 
+ap: 
+mood:
+---
+
+

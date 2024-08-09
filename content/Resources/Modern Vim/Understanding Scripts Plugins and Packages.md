@@ -43,9 +43,9 @@ aliases: []
 - otherwise pull it under `$VIMCONFIG/pack/*/opt` , this `opt` folder is for optional Plugins
 	- They need to be add manually by `packadd {pack-name}`	
 
-### minpac built-in package manager 
-- minpac is a minimal package manager that builds on top of Vim's new packages features
-	- therefore minpac has the least codebase but may not offer all features mature compared to other package manager
+### Minpac built-in package manager 
+- Minpac is a minimal package manager that builds on top of Vim's new packages features
+	- Therefore minpac has the least codebase but may not offer all features mature compared to other package manager
 - We should first create a package directory called `minpac` because minpac plugin will pull the plugin under this package directory
 	- This `minpac` package directory is used to contain the plugins minpac grasps
 - To use minpac , we need to create the `~/vimrc` and add `packadd minpac`.  Since the minpac should be put under `minpac/opt` folder otherwise `packadd` can't be used
@@ -53,4 +53,3 @@ aliases: []
 - To register *PLUGINs* with your minpac package , add `call minpac#add('authorname/name_plugin', {'type':'opt'})` , if you want to add to `opt` folder
 - To download the plugins use `call minpac#update()`
 - To make minpac manages itself , use `call minpac#add('k-takata/minpac', {'type' : 'opt'}`
-
