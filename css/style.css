@@ -323,4 +323,10 @@ a:hover {
     section {
         page-break-inside: avoid;
     }
+
+    /* Remove all shadows */
+    * {
+        box-shadow: none !important; /* Ensures no element retains a shadow */
+        text-shadow: none !important; /* Removes any text shadows */
+    }
 }
