@@ -279,3 +279,48 @@ a:hover {
     color: #0c47a1;
     border-bottom: 2px solid #0c47a1;
 }
+
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+        font-size: 12pt;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .profile-container, i {
+        display: none; /* Remove unnecessary images/icons for print */
+    }
+
+    a::after {
+        content: " (" attr(href) ")"; /* Show URLs in parentheses */
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr; /* Single-column layout for printing */
+    }
+
+    section {
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        color: #000;
+        font-size: 1.5rem;
+    }
+
+    @page {
+        margin: 1in;
+    }
+
+    /* Page breaks for sections */
+    section {
+        page-break-inside: avoid;
+    }
+}
