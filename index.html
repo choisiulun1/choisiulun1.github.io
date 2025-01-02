@@ -4,119 +4,159 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alan Choi's Resume</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+      body {
+          font-family: "Times New Roman", sans-serif;
+          line-height: 1.4;
+          color: black;
+          background-color: white;
+          margin: 0;
+          padding: 0;
+      }
+
+      .container {
+          max-width: 800px;
+          margin: 10px auto;
+          padding: 15px;
+          border: 1px solid #000;
+      }
+
+      h1, h2, h3 {
+          margin: 5px 0;
+      }
+
+      h1 {
+          font-size: 20px;
+          text-align: center;
+      }
+
+      h2 {
+          font-size: 16px;
+          margin: 10px 0; /* Reduced margin */
+          border-bottom: 1px solid #000;
+      }
+
+      h3 {
+          font-size: 14px;
+          margin: 2px 0; /* Reduced margin */
+      }
+
+      p, ul {
+          margin: 2px 0;
+          font-size: 12px;
+      }
+
+      ul {
+          list-style-type: disc;
+          margin-left: 15px;
+      }
+
+      a {
+          color: black;
+          text-decoration: underline;
+      }
+
+      a:hover {
+          text-decoration: none;
+      }
+
+      hr {
+          border: 0;
+          height: 1px;
+          background-color: #000;
+          margin: 10px 0; /* Reduced margin */
+      }
+
+      .flex {
+          display: flex;
+          justify-content: space-between;
+      }
+  </style>
 </head>
 <body>
 <div class="container">
-  <header class="header">
-    <div class="profile-container">
-      <h1>Alan Choi</h1>
-      <p>HKUST Graduate | Postgraduate Diploma in Applied AI Development</p>
-    </div>
+  <header>
+    <h1>Alan Choi</h1>
+    <p style="text-align: center;">HKUST Graduate | Postgraduate Diploma in Applied AI Development</p>
+    <p style="text-align: center;">Email: <a href="mailto:choisiulun1@gmail.com">choisiulun1@gmail.com</a> | Phone: +1 (647) 619-5149</p>
+    <p style="text-align: center;">GitHub: <a href="https://github.com/choisiulun1" target="_blank">github.com/choisiulun1</a> | LinkedIn: <a href="https://www.linkedin.com/in/alan-choi-b4158a255/" target="_blank">linkedin.com/in/alan-choi</a></p>
   </header>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <div class="contact-container">
-      <div><i class="fas fa-envelope"></i> <a href="mailto:choisiulun1@gmail.com">choisiulun1@gmail.com</a></div>
-      <div><i class="fas fa-phone"></i> +1 (647) 619-5149</div>
-      <div><i class="fab fa-github"></i> <a href="https://github.com/choisiulun1" target="_blank">github.com/choisiulun1</a></div>
-      <div><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/alan-choi-b4158a255/" target="_blank">https://www.linkedin.com/in/alan-choi-b4158a255/</a></div>
-    </div>
-  </section>
-
-  <section class="about">
+  <section>
     <h2>About Me</h2>
     <p>
-      I am a passionate and driven individual currently pursuing a Postgraduate Diploma focused on Machine Learning techniques. With a keen interest in Big Data and Machine Learning, I am dedicated to leveraging data-driven insights to solve complex problems and drive innovation.
+      I am a passionate and driven individual currently pursuing a Postgraduate Diploma focused on Machine Learning techniques.
+      With a keen interest in Big Data and Machine Learning, I aim to leverage data-driven insights to solve complex problems
+      and drive innovation in various domains.
     </p>
   </section>
 
-  <section class="skills">
+  <section>
     <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill-category">
-        <h3><i class="fas fa-code"></i> Programming Languages</h3>
-        <p>Python, C++, Java, Kotlin, JavaScript, HTML, CSS</p>
-      </div>
-      <div class="skill-category">
-        <h3><i class="fas fa-laptop-code"></i> Frameworks</h3>
-        <p>Flask, ReactJS, Hadoop, Hive, PySpark</p>
-      </div>
-      <div class="skill-category">
-        <h3><i class="fas fa-cloud"></i> Platforms</h3>
-        <p>GCP, Azure, Android, Microsoft Fabric, Unity</p>
-      </div>
-      <div class="skill-category">
-        <h3><i class="fas fa-tools"></i> Tools</h3>
-        <p>Git, Docker, Kubernetes (K8S), Tableau, Linux Shell Scripting</p>
-      </div>
-    </div>
+    <h3>Programming Languages</h3>
+    <p>Python, C++, Java, Kotlin, JavaScript, HTML, CSS</p>
+    <h3>Frameworks</h3>
+    <p>Flask, ReactJS, Hadoop, Hive, PySpark</p>
+    <h3>Platforms</h3>
+    <p>GCP, Azure, Android, Microsoft Fabric, Unity</p>
+    <h3>Tools</h3>
+    <p>Git, Docker, Kubernetes (K8S), Tableau, Linux Shell Scripting</p>
   </section>
 
-  <section class="competitions">
+  <section>
     <h2>Competitions</h2>
-    <div class="competition-container">
-      <div class="competition">
-        <h3><i class="fas fa-trophy"></i> Best Azure Cosmos DB + Microsoft Fabric Integration</h3>
-        <p class="competition-details">
-          Awarded in the <a href="https://microsoftfabric.devpost.com/" target="_blank">Microsoft Fabric and AI Learning Hackathon</a> for building a research assistant solution integrating Azure Cosmos DB and Microsoft Fabric, enhancing research workflows.
-        </p>
-        <ul>
-          <li>Utilized PySpark for clustering, ETL pipelines, and metadata enrichment of research data.</li>
-          <li>Integrated Azure RAG for AI-driven topic suggestions and contextual answers using OpenAI and Bing Search API.</li>
-          <li>Automated notifications and reporting via Power Automate with insights visualized in Power BI.</li>
-        </ul>
-        <p class="competition-repo">
-          <i class="fas fa-code-branch"></i> Project Repository: <a href="https://github.com/choisiulun1/Research_Of_Research" target="_blank">Research_Of_Research</a>
-        </p>
-        <p class="competition-devpost">
-          <i class="fas fa-link"></i> Devpost: <a href="https://devpost.com/software/research-of-research" target="_blank">Research of Research</a>
-        </p>
-      </div>
-    </div>
+    <h3>Best Azure Cosmos DB + Microsoft Fabric Integration</h3>
+    <p>
+      Awarded in the Microsoft Fabric and AI Learning Hackathon for building a research assistant solution integrating Azure Cosmos DB and Microsoft Fabric.
+    </p>
+    <ul>
+      <li>Utilized PySpark for clustering, ETL pipelines, and metadata enrichment of research data.</li>
+      <li>Integrated Azure RAG for AI-driven topic suggestions and contextual answers using OpenAI and Bing Search API.</li>
+      <li>Automated notifications and reporting via Power Automate with insights visualized in Power BI.</li>
+    </ul>
+    <p>Project Repository: <a href="https://github.com/choisiulun1/Research_Of_Research" target="_blank">Research_Of_Research</a></p>
+    <p>Devpost: <a href="https://devpost.com/software/research-of-research" target="_blank">Research of Research</a></p>
   </section>
 
-  <section class="experience">
+  <section>
     <h2>Work Experience</h2>
-    <div class="experience-container">
-      <div class="job">
-        <h3><i class="fas fa-briefcase"></i> Software Engineer</h3>
-        <p class="job-dates">June 2023 – January 2024 | Asta Systems Limited, Hong Kong</p>
-        <ul>
-          <li>Designed and implemented tailored webpages on the Odoo platform, utilizing custom CSS and widgets to meet client specifications.</li>
-          <li>Maintained the API for the TCMS payment gateway, ensuring seamless integration between Odoo and TCMS using JavaScript.</li>
-          <li>Assisted senior team members in gathering customer requirements and supported the design and implementation of solutions based on client needs.</li>
-        </ul>
-      </div>
+    <div class="flex">
+      <h3>Asta Systems Limited, Hong Kong</h3>
+      <p>06/2023 – 01/2024</p>
     </div>
+    <ul>
+      <li>Designed and implemented tailored webpages on the Odoo platform using custom CSS and widgets.</li>
+      <li>Maintained the API for the TCMS payment gateway, ensuring seamless integration between Odoo and TCMS using JavaScript.</li>
+      <li>Assisted senior team members in gathering customer requirements and supported solution implementation.</li>
+    </ul>
   </section>
 
-  <section class="education">
+  <section>
     <h2>Education</h2>
-    <div class="education-container">
-      <div class="degree">
-        <h3><i class="fas fa-graduation-cap"></i> Bachelor of Engineering in Computer Engineering</h3>
-        <p class="degree-dates">The Hong Kong University of Science and Technology (HKUST)<br>September 2021 – June 2024</p>
-        <p class="degree-description">
-          Completed a comprehensive program covering both hardware and software aspects of computer systems, including courses in programming, data structures, algorithms, and system design.
-        </p>
-        <div class="final-year-project">
-          <h4>Final Year Project: AI-Generated Text Detection Tool</h4>
-          <p>
-            A tool was developed for detecting AI-generated text through a ensemble approach to text analysis. The method integrates perplexity and burstiness metrics with post-hoc analysis, zero-shot learning, and rapid implementation of techniques derived from cutting-edged research.
-          </p>
-        </div>
-      </div>
-      <div class="degree">
-        <h3><i class="fas fa-graduation-cap"></i> Graduate Certificate in Applied A.I. Solutions Development</h3>
-        <p class="degree-dates">George Brown College<br>September 2024 – August 2025</p>
-        <p class="degree-description">
-          Enrolled in a one-year postgraduate program focusing on artificial intelligence, machine learning, and data science, emphasizing the development of AI-driven solutions across various industries.
-        </p>
-      </div>
+    <div class="flex">
+      <h3>The Hong Kong University of Science and Technology (HKUST)</h3>
+      <p>09/2021 – 06/2024</p>
     </div>
+    <p>
+      <b>
+        <i>BEng in Computer Engineering</i><br>
+      </b>
+      Completed a comprehensive program covering hardware and software aspects of computer systems, including courses in
+      programming, data structures, algorithms, and system design.
+      <br>
+      <b>Final Year Project:</b> Developed a tool for detecting AI-generated text using an ensemble approach and advanced metrics.
+    </p>
+    <div class="flex">
+      <h3>George Brown College</h3>
+      <p>09/2024 – 08/2025</p>
+    </div>
+    <p>
+      <b>
+        <i>Postgraduate Diploma in Applied AI Development</i><br>
+      </b>
+      Focused on artificial intelligence, machine learning, and data science, emphasizing the development of AI-driven solutions
+      across various industries.
+    </p>
   </section>
 </div>
 </body>
