@@ -3,172 +3,379 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alan Choi's Resume</title>
+  <title>Alan Choi - Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Computer Modern font (LaTeX default font) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
   <style>
+    body {
+      font-family: "Computer Modern Serif", "Computer Modern", "Times New Roman", Times, serif;
+      font-size: 11pt;
+      line-height: 1.2;
+      margin: 0;
+      padding: 0;
+      background: white;
+      color: black;
+    }
+    
+    .container {
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.5in 0.6in;
+    }
+    
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    
+    .header h1 {
+      font-size: 24pt;
+      font-weight: normal;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    
+    .contact-info {
+      margin-top: 2px;
+      font-size: 10pt;
+    }
+    
+    .contact-info a {
+      color: black;
+      text-decoration: underline;
+    }
+    
+    .contact-info a:hover {
+      text-decoration: none;
+    }
+    
+    /* Sections */
+    .section {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .section-title {
+      font-size: 12pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-bottom: 1px solid black;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+    }
+    
+    /* Experience and Project Items */
+    .experience-item, .project-item {
+      margin-bottom: 10px;
+    }
+    
+    .item-header {
+      display: table;
+      width: 100%;
+      margin-bottom: 2px;
+    }
+    
+    .item-row {
+      display: table-row;
+    }
+    
+    .item-left {
+      display: table-cell;
+      font-weight: bold;
+      font-size: 10pt;
+    }
+    
+    .item-right {
+      display: table-cell;
+      text-align: right;
+      font-weight: bold;
+      font-size: 10pt;
+    }
+    
+    .item-tech {
+      font-style: italic;
+      font-size: 10pt;
+      margin-bottom: 3px;
+    }
+    
+    /* Bullet points */
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      margin-bottom: 5px;
+    }
+    
+    li {
+      margin-bottom: 2px;
+      font-size: 10pt;
+    }
+    
+    /* Education */
+    .education-item {
+      margin-bottom: 5px;
+    }
+    
+    .education-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 10pt;
+    }
+    
+    .education-details {
+      display: flex;
+      justify-content: space-between;
+      font-style: italic;
+      font-size: 9pt;
+    }
+    
+    /* Skills */
+    .skills-list {
+      font-size: 10pt;
+      line-height: 1.4;
+    }
+    
+    .skills-list strong {
+      font-weight: bold;
+    }
+    
+    /* Links */
+    a {
+      color: black;
+    }
+    
+    /* Make bold text actually bold */
+    strong, b {
+      font-weight: bold;
+    }
+    
+    /* Print styles to ensure one page */
+    @media print {
       body {
-          font-family: "Times New Roman", sans-serif;
-          line-height: 1.4;
-          color: black;
-          background-color: white;
-          margin: 0;
-          padding: 0;
+        margin: 0;
+        font-size: 10pt;
+        line-height: 1.15;
       }
-
+      
       .container {
-          max-width: 800px;
-          margin: 10px auto;
-          padding: 15px;
-          border: 1px solid #000;
+        max-width: 100%;
+        padding: 0.3in 0.4in;
+        margin: 0;
       }
-
-      h1, h2, h3 {
-          margin: 5px 0;
+      
+      .section {
+        margin-top: 8px;
+        margin-bottom: 8px;
       }
-
-      h1 {
-          font-size: 20px;
-          text-align: center;
+      
+      .section-title {
+        font-size: 11pt;
+        margin-bottom: 3px;
+        padding-bottom: 1px;
       }
-
-      h2 {
-          font-size: 16px;
-          margin: 10px 0; /* Reduced margin */
-          border-bottom: 1px solid #000;
+      
+      .header h1 {
+        font-size: 20pt;
+        margin-bottom: 2px;
       }
-
-      h3 {
-          font-size: 14px;
-          margin: 2px 0; /* Reduced margin */
+      
+      .contact-info {
+        font-size: 9pt;
+        margin-top: 1px;
       }
-
-      p, ul {
-          margin: 2px 0;
-          font-size: 12px;
+      
+      .experience-item, .project-item {
+        margin-bottom: 8px;
       }
-
+      
+      .education-item {
+        margin-bottom: 4px;
+      }
+      
       ul {
-          list-style-type: disc;
-          margin-left: 15px;
+        margin-bottom: 3px;
+        padding-left: 18px;
       }
-
-      a {
-          color: black;
-          text-decoration: underline;
+      
+      li {
+        margin-bottom: 1px;
+        font-size: 9.5pt;
       }
-
-      a:hover {
-          text-decoration: none;
+      
+      .item-left, .item-right {
+        font-size: 9.5pt;
       }
-
-      hr {
-          border: 0;
-          height: 1px;
-          background-color: #000;
-          margin: 10px 0; /* Reduced margin */
+      
+      .item-tech {
+        font-size: 9pt;
+        margin-bottom: 2px;
       }
-
-      .flex {
-          display: flex;
-          justify-content: space-between;
+      
+      .education-header {
+        font-size: 9.5pt;
       }
+      
+      .education-details {
+        font-size: 8.5pt;
+      }
+      
+      .skills-list {
+        font-size: 9pt;
+        line-height: 1.3;
+      }
+      
+      /* Force page breaks */
+      @page {
+        size: letter;
+        margin: 0.5in;
+      }
+      
+      /* Prevent page breaks */
+      .section, .experience-item, .project-item, .education-item {
+        page-break-inside: avoid;
+      }
+    }
   </style>
 </head>
 <body>
-<div class="container">
-  <header>
-    <h1>Alan Choi</h1>
-    <p style="text-align: center;">HKUST Graduate | Postgraduate Diploma in Applied AI Development</p>
-    <p style="text-align: center;">Email: <a href="mailto:choisiulun1@gmail.com">choisiulun1@gmail.com</a> | Phone: +1 (647) 619-5149</p>
-    <p style="text-align: center;">GitHub: <a href="https://github.com/choisiulun1" target="_blank">github.com/choisiulun1</a> | LinkedIn: <a href="https://www.linkedin.com/in/alan-choi-b4158a255/" target="_blank">https://www.linkedin.com/in/alan-choi-b4158a255</a></p>
-  </header>
-
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a passionate and driven individual currently pursuing a Postgraduate Diploma focused on Machine Learning techniques.
-      With a keen interest in Big Data and Machine Learning, I aim to leverage data-driven insights to solve complex problems
-      and drive innovation in various domains.
-    </p>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <p>Python, JavaScript, React, Next.js, Kubernetes (K8s), Azure, FastAPI, PostgreSQL</p>
-  </section>
-
-  <section>
-    <h2>Competitions</h2>
-    <div class="flex">
-      <h3>Best Azure Cosmos DB + Microsoft Fabric Integration in Microsoft Fabric and AI Learning Hackathon</h3>
-      <p>09/2024 - 11/2024</p>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Alan Choi</h1>
+      <div class="contact-info">
+        <i class="fas fa-phone"></i> +1 (647) 619-5149 | 
+        <i class="fas fa-envelope"></i> <a href="mailto:choisiulun1@gmail.com">choisiulun1@gmail.com</a> | 
+        <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/alan-choi-b4158a255/">linkedin.com/in/alan-choi-b4158a255</a> | 
+        <i class="fab fa-github"></i> <a href="https://github.com/choisiulun1">github.com/choisiulun1</a>
+      </div>
     </div>
 
-    <p>
-      Awarded in the Microsoft Fabric and AI Learning Hackathon for building a research assistant solution integrating Azure Cosmos DB and Microsoft Fabric.
-    </p>
-    <ul>
-      <li>Utilized PySpark for clustering, ETL pipelines, and metadata enrichment of research data.</li>
-      <li>Integrated Azure RAG for AI-driven topic suggestions and contextual answers using OpenAI and Bing Search API.</li>
-      <li>Automated notifications and reporting via Power Automate with insights visualized in Power BI.</li>
-    </ul>
-    <p>Project Repository: <a href="https://github.com/choisiulun1/Research_Of_Research" target="_blank">Research_Of_Research</a></p>
-    <p>Devpost: <a href="https://devpost.com/software/research-of-research" target="_blank">Research of Research</a></p>
-  </section>
+    <!-- Education -->
+    <div class="section">
+      <div class="section-title">Education and Certificates</div>
+      <div class="education-item">
+        <div class="education-header">
+          <span>Postgraduate Diploma in Applied AI Development</span>
+          <span>Sep. 2024 – Aug. 2025</span>
+        </div>
+        <div class="education-details">
+          <span>George Brown College</span>
+          <span>Toronto, ON</span>
+        </div>
+      </div>
+      <div class="education-item">
+        <div class="education-header">
+          <span>BEng in Computer Engineering</span>
+          <span>Sep. 2021 – Jun. 2024</span>
+        </div>
+        <div class="education-details">
+          <span>The Hong Kong University of Science and Technology (HKUST)</span>
+          <span>Hong Kong</span>
+        </div>
+      </div>
+    </div>
 
-  <section>
-    <h2>Work Experience</h2>
-    <div class="flex">
-      <h3>Kinectrics, Toronto, Ontario, Canada</h3>
-      <p>06/2025 – 08/2025</p>
-    </div>
-    <p>
-      <b><i>Software Engineer Intern (Co-op)</i></b>
-    </p>
-    <ul>
-      <li>R&D of a cloud-native platform for AI-assisted code execution in secure, containerized environments with scalable, concurrency-safe execution.</li>
-    </ul>
-    
-    <div class="flex">
-      <h3>Asta Systems Limited, Hong Kong</h3>
-      <p>06/2023 – 01/2024</p>
-    </div>
-    <p>
-      <b><i>Software Engineer Intern</i></b>
-    </p>
-    <ul>
-      <li>Built and optimized predictive models for customer behavior analysis using Python, scikit-learn, and TensorFlow, leading to more efficient business recommendations.</li>
-      <li>Designed interactive dashboards to visualize key insights extracted from structured and unstructured data using Flask and JavaScript.</li>
-      <li>Use FastAPI to provide backend model inference.</li>
-    </ul>
-  </section>
+    <!-- Work Experience -->
+    <div class="section">
+      <div class="section-title">Work Experience</div>
+      
+      <div class="experience-item">
+        <div class="item-header">
+          <div class="item-row">
+            <div class="item-left">Software Engineer Intern (Co-op) | Kinectrics | Toronto, ON</div>
+            <div class="item-right">Jun. 2025 – Aug. 2025</div>
+          </div>
+        </div>
+        <div class="item-tech">Next.js 15, React 19, FastAPI, Azure OpenAI, PostgreSQL, Redis, Azure Blob Storage</div>
+        <ul>
+          <li>Architected and deployed an enterprise AI chat platform using Next.js 15/React 19 and FastAPI, integrating Azure OpenAI with PostgreSQL and Redis to deliver real-time streaming responses with sub-200ms latency</li>
+          <li>Implemented RAG-based document processing pipeline with Redis vector store and Azure OpenAI embeddings, achieving 95% context relevance in AI-generated responses across 10,000+ queries</li>
+          <li>Engineered secure file management system with client-side browser-to-Azure-Blob direct uploads supporting 5GB files, automated preview generation, and role-based access control—reducing backend processing load by 80%</li>
+        </ul>
+      </div>
 
-  <section>
-    <h2>Education</h2>
-    <div class="flex">
-      <h3>The Hong Kong University of Science and Technology (HKUST)</h3>
-      <p>09/2021 – 06/2024</p>
+      <div class="experience-item">
+        <div class="item-header">
+          <div class="item-row">
+            <div class="item-left">Software Engineer Intern | Asta Systems Limited | Hong Kong</div>
+            <div class="item-right">Jun. 2023 – Jan. 2024</div>
+          </div>
+        </div>
+        <div class="item-tech">TensorFlow, scikit-learn, Flask, FastAPI, Python</div>
+        <ul>
+          <li>Developed prototype models with <strong>TensorFlow</strong>, <strong>scikit-learn</strong>, and <strong>Naive Bayes</strong> to analyze customer behavior and support recommendation features</li>
+          <li>Built <strong>Flask dashboards</strong> to visualize business analytics for internal teams and implemented <strong>FastAPI</strong> endpoints for serving model predictions in real time</li>
+          <li>Provided technical assistance to users on <strong>ERP platform</strong>, troubleshooting issues and supporting system adoption</li>
+        </ul>
+      </div>
     </div>
-    <p>
-      <b>
-        <i>BEng in Computer Engineering</i><br>
-      </b>
-      Completed a comprehensive program covering hardware and software aspects of computer systems, including courses in
-      programming, data structures, algorithms, and system design.
-      <br>
-      <b>Final Year Project:</b> Developed a tool for detecting AI-generated text using an ensemble approach and advanced metrics.The method integrates perplexity and burstiness metrics with post-hoc analysis, zero-shot learning, and rapid implementation of techniques derived from cutting-edge research.
-    </p>
-    <div class="flex">
-      <h3>George Brown College</h3>
-      <p>09/2024 – 08/2025</p>
+
+    <!-- Projects & Competitions -->
+    <div class="section">
+      <div class="section-title">Projects & Competitions</div>
+      
+      <div class="project-item">
+        <div class="item-header">
+          <div class="item-row">
+            <div class="item-left">Research of Research - Microsoft Hackathon Winner</div>
+            <div class="item-right">Nov. 2024</div>
+          </div>
+        </div>
+        <div class="item-tech">PySpark, Azure Cosmos DB, Microsoft Fabric, OpenAI</div>
+        <ul>
+          <li>Won <strong>Best Azure Cosmos DB + Microsoft Fabric Integration Award</strong> among <strong>4499 participants</strong> and <strong>200+ teams</strong> for research analysis platform</li>
+          <li>Built <strong>ETL pipelines</strong> processing <strong>10,000+ papers</strong> with PySpark and <strong>Azure RAG</strong> for paper Q&A</li>
+          <li>[<a href="https://github.com/choisiulun1/Research_Of_Research">GitHub</a>] [<a href="https://devpost.com/software/research-of-research">Devpost</a>]</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <div class="item-header">
+          <div class="item-row">
+            <div class="item-left">AI Text Detection - Ensemble Method Detector</div>
+            <div class="item-right">Sep. 2023 – Jun. 2024</div>
+          </div>
+        </div>
+        <div class="item-tech">Python, Flask, PostgreSQL, Gradio</div>
+        <ul>
+          <li>Developed <strong>ensemble detector</strong> achieving <strong>80% accuracy</strong> on XSum and SQuAD datasets for AI-generated content detection</li>
+          <li>Combined <strong>soft watermarking</strong> with <strong>perplexity scoring</strong> to balance recall and false positive rates for reliable detection</li>
+          <li>Built web application with <strong>Gradio UI</strong> enabling batch document processing for educator use cases</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <div class="item-header">
+          <div class="item-row">
+            <div class="item-left">Facial Landmark Detection</div>
+            <div class="item-right">Mar. 2024</div>
+          </div>
+        </div>
+        <div class="item-tech">PyTorch, StyleGAN, ResNet50, MobileNetV2, YOLOv5</div>
+        <ul>
+          <li>Built system localizing <strong>19 facial keypoints</strong> comparing ResNet50, MobileNetV2, and YOLOv5 architectures</li>
+          <li>Implemented <strong>StyleGAN augmentation</strong> with e4e encoder; ResNet50 achieved best test loss of <strong>&lt;2000</strong> vs YOLOv5's 16,111</li>
+          <li>Applied <strong>5x data augmentation</strong> to handle pose variations in facial landmark detection</li>
+        </ul>
+      </div>
     </div>
-    <p>
-      <b>
-        <i>Postgraduate Diploma in Applied AI Development</i><br>
-      </b>
-      Focused on artificial intelligence, machine learning, and data science, emphasizing the development of AI-driven solutions
-      across various industries.
-    </p>
-  </section>
-</div>
+
+    <!-- Technical Skills -->
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-list">
+        <strong>Languages:</strong> Python, C++, JavaScript, SQL, HTML/CSS<br>
+        <strong>Frontend:</strong> React 19, Next.js 15, HTML/CSS<br>
+        <strong>Backend:</strong> FastAPI, Flask, Node.js<br>
+        <strong>Databases:</strong> PostgreSQL, Redis (RediSearch)<br>
+        <strong>Cloud & DevOps:</strong> Azure (OpenAI, Blob Storage, Service Bus, Cosmos DB), Kubernetes, Docker, CI/CD, Git<br>
+        <strong>AI/ML:</strong> TensorFlow, PyTorch, scikit-learn, Azure OpenAI, RAG, LLMs, Hugging Face, pandas, NumPy, OpenCV, YOLO<br>
+        <strong>Soft Skills:</strong> Team collaboration, Agile methodology, Technical documentation, Stakeholder communication
+      </div>
+    </div>
+  </div>
 </body>
 </html>
