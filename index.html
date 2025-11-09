@@ -10,7 +10,7 @@
   <style>
     body {
       font-family: "Computer Modern Serif", "Computer Modern", "Times New Roman", Times, serif;
-      font-size: 11pt;
+      font-size: 11.5pt;
       line-height: 1.2;
       margin: 0;
       padding: 0;
@@ -21,13 +21,13 @@
     .container {
       max-width: 8.5in;
       margin: 0 auto;
-      padding: 0.5in 0.6in;
+      padding: 0.3in 0.6in 0.5in 0.6in;
     }
     
     /* Header */
     .header {
       text-align: center;
-      margin-bottom: 5px;
+      margin-bottom: 3px;
     }
     
     .header h1 {
@@ -40,7 +40,7 @@
     
     .contact-info {
       margin-top: 2px;
-      font-size: 10pt;
+      font-size: 10.5pt;
     }
     
     .contact-info a {
@@ -85,19 +85,19 @@
     .item-left {
       display: table-cell;
       font-weight: bold;
-      font-size: 10pt;
+      font-size: 10.5pt;
     }
-    
+
     .item-right {
       display: table-cell;
       text-align: right;
       font-weight: bold;
-      font-size: 10pt;
+      font-size: 10.5pt;
     }
-    
+
     .item-tech {
       font-style: italic;
-      font-size: 10pt;
+      font-size: 10.5pt;
       margin-bottom: 3px;
     }
     
@@ -110,7 +110,7 @@
     
     li {
       margin-bottom: 2px;
-      font-size: 10pt;
+      font-size: 10.5pt;
     }
     
     /* Education */
@@ -122,19 +122,19 @@
       display: flex;
       justify-content: space-between;
       font-weight: bold;
-      font-size: 10pt;
+      font-size: 10.5pt;
     }
-    
+
     .education-details {
       display: flex;
       justify-content: space-between;
       font-style: italic;
-      font-size: 9pt;
+      font-size: 9.5pt;
     }
     
     /* Skills */
     .skills-list {
-      font-size: 10pt;
+      font-size: 10.5pt;
       line-height: 1.4;
     }
     
@@ -162,7 +162,7 @@
       
       .container {
         max-width: 100%;
-        padding: 0.3in 0.4in;
+        padding: 0.2in 0.4in 0.3in 0.4in;
         margin: 0;
       }
       
@@ -236,6 +236,17 @@
       /* Prevent page breaks */
       .section, .experience-item, .project-item, .education-item {
         page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      .header, .section-title {
+        page-break-after: avoid;
+        break-after: avoid;
+      }
+
+      ul {
+        page-break-inside: avoid;
+        break-inside: avoid;
       }
     }
   </style>
@@ -246,16 +257,15 @@
     <div class="header">
       <h1>Alan Choi</h1>
       <div class="contact-info">
-        <i class="fas fa-phone"></i> +1 (647) 619-5149 | 
-        <i class="fas fa-envelope"></i> <a href="mailto:choisiulun1@gmail.com">choisiulun1@gmail.com</a> | 
-        <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/alan-choi-b4158a255/">linkedin.com/in/alan-choi-b4158a255</a> | 
-        <i class="fab fa-github"></i> <a href="https://github.com/choisiulun1">github.com/choisiulun1</a>
+        +852 9055 7229 | <a href="mailto:choisiulun1@gmail.com">choisiulun1@gmail.com</a> |
+        <a href="https://linkedin.com/in/alan-choi-b4158a255/">linkedin.com/in/alan-choi-b4158a255</a> |
+        <a href="https://github.com/choisiulun1">github.com/choisiulun1</a>
       </div>
     </div>
 
     <!-- Education -->
     <div class="section">
-      <div class="section-title">Education and Certificates</div>
+      <div class="section-title">Education & Certifications</div>
       <div class="education-item">
         <div class="education-header">
           <span>Postgraduate Diploma in Applied AI Development</span>
@@ -276,6 +286,26 @@
           <span>Hong Kong</span>
         </div>
       </div>
+      <div class="education-item">
+        <div class="education-header">
+          <span>Microsoft Certified: Azure Data Scientist Associate</span>
+          <span>Sep. 2025</span>
+        </div>
+        <div class="education-details">
+          <span>Microsoft</span>
+          <span></span>
+        </div>
+      </div>
+      <!-- <div class="education-item">
+        <div class="education-header">
+          <span>CFA Level I Candidate</span>
+          <span>Exam: Feb. 2026</span>
+        </div>
+        <div class="education-details">
+          <span>CFA Institute</span>
+          <span></span>
+        </div>
+      </div> -->
     </div>
 
     <!-- Work Experience -->
@@ -289,11 +319,12 @@
             <div class="item-right">Jun. 2025 – Aug. 2025</div>
           </div>
         </div>
-        <div class="item-tech">Next.js 15, React 19, FastAPI, Azure OpenAI, PostgreSQL, Redis, Azure Blob Storage</div>
+        <div class="item-tech">Azure OpenAI, Azure Blob Storage, Azure Cosmos DB, Next.js 15, React 19, FastAPI, PostgreSQL, Redis</div>
         <ul>
-          <li>Architected and deployed an enterprise AI chat platform using Next.js 15/React 19 and FastAPI, integrating Azure OpenAI with PostgreSQL and Redis to deliver real-time streaming responses with sub-200ms latency</li>
-          <li>Implemented RAG-based document processing pipeline with Redis vector store and Azure OpenAI embeddings, achieving 95% context relevance in AI-generated responses across 10,000+ queries</li>
-          <li>Engineered secure file management system with client-side browser-to-Azure-Blob direct uploads supporting 5GB files, automated preview generation, and role-based access control—reducing backend processing load by 80%</li>
+          <li>Built enterprise AI chat platform powered by <strong>Azure OpenAI</strong> with Next.js 15/React 19 frontend, reducing response latency from 500ms to sub-200ms (60% improvement)</li>
+          <li>Processed 10,000+ user queries through <strong>Azure-integrated RAG pipeline</strong> with Redis vector store, achieving 95% accuracy in context retrieval</li>
+          <li>Architected cloud-native file management with <strong>Azure Blob Storage</strong> using <strong>SAS tokens</strong> and <strong>Azure Cosmos DB</strong>, reducing backend load by 80% and supporting 5GB uploads</li>
+          <li>Implemented <strong>vector embedding cache</strong> with <strong>Redis</strong> to store pre-computed document embeddings and <strong>semantic search results</strong>, reducing Azure OpenAI API calls by <strong>35%</strong> and Cosmos DB vector queries by <strong>40%</strong></li>
         </ul>
       </div>
 
@@ -307,7 +338,7 @@
         <div class="item-tech">TensorFlow, scikit-learn, Flask, FastAPI, Python</div>
         <ul>
           <li>Developed prototype models with <strong>TensorFlow</strong>, <strong>scikit-learn</strong>, and <strong>Naive Bayes</strong> to analyze customer behavior and support recommendation features</li>
-          <li>Built <strong>Flask dashboards</strong> to visualize business analytics for internal teams and implemented <strong>FastAPI</strong> endpoints for serving model predictions in real time</li>
+          <li>Built <strong>Flask dashboards</strong> to visualize business analytics for internal teams and delivered presentations to non-technical stakeholders</li>
           <li>Provided technical assistance to users on <strong>ERP platform</strong>, troubleshooting issues and supporting system adoption</li>
         </ul>
       </div>
@@ -320,14 +351,15 @@
       <div class="project-item">
         <div class="item-header">
           <div class="item-row">
-            <div class="item-left">Research of Research - Microsoft Hackathon Winner</div>
+            <div class="item-left">Microsoft Fabric and AI Learning Hackathon</div>
             <div class="item-right">Nov. 2024</div>
           </div>
         </div>
-        <div class="item-tech">PySpark, Azure Cosmos DB, Microsoft Fabric, OpenAI</div>
+        <div class="item-tech">PySpark, Azure Cosmos DB, Microsoft Fabric, OpenAI, Power Automate, Power BI</div>
         <ul>
           <li>Won <strong>Best Azure Cosmos DB + Microsoft Fabric Integration Award</strong> among <strong>4499 participants</strong> and <strong>200+ teams</strong> for research analysis platform</li>
           <li>Built <strong>ETL pipelines</strong> processing <strong>10,000+ papers</strong> with PySpark and <strong>Azure RAG</strong> for paper Q&A</li>
+          <li>Automated report delivery with <strong>Power Automate</strong> and created interactive dashboards in <strong>Power BI</strong> for research insights visualization</li>
           <li>[<a href="https://github.com/choisiulun1/Research_Of_Research">GitHub</a>] [<a href="https://devpost.com/software/research-of-research">Devpost</a>]</li>
         </ul>
       </div>
@@ -335,7 +367,7 @@
       <div class="project-item">
         <div class="item-header">
           <div class="item-row">
-            <div class="item-left">AI Text Detection - Ensemble Method Detector</div>
+            <div class="item-left">HKUST Final Year Project - AI-Generated Content Detection System</div>
             <div class="item-right">Sep. 2023 – Jun. 2024</div>
           </div>
         </div>
@@ -351,7 +383,7 @@
         <div class="item-header">
           <div class="item-row">
             <div class="item-left">Facial Landmark Detection</div>
-            <div class="item-right">Mar. 2024</div>
+            <div class="item-right">Mar. 2025</div>
           </div>
         </div>
         <div class="item-tech">PyTorch, StyleGAN, ResNet50, MobileNetV2, YOLOv5</div>
@@ -367,13 +399,13 @@
     <div class="section">
       <div class="section-title">Technical Skills</div>
       <div class="skills-list">
-        <strong>Languages:</strong> Python, C++, JavaScript, SQL, HTML/CSS<br>
-        <strong>Frontend:</strong> React 19, Next.js 15, HTML/CSS<br>
-        <strong>Backend:</strong> FastAPI, Flask, Node.js<br>
-        <strong>Databases:</strong> PostgreSQL, Redis (RediSearch)<br>
-        <strong>Cloud & DevOps:</strong> Azure (OpenAI, Blob Storage, Service Bus, Cosmos DB), Kubernetes, Docker, CI/CD, Git<br>
-        <strong>AI/ML:</strong> TensorFlow, PyTorch, scikit-learn, Azure OpenAI, RAG, LLMs, Hugging Face, pandas, NumPy, OpenCV, YOLO<br>
-        <strong>Soft Skills:</strong> Team collaboration, Agile methodology, Technical documentation, Stakeholder communication
+        <strong>Programming:</strong> Python, JavaScript, C++, SQL<br>
+        <strong>Web Development:</strong> React, Next.js, FastAPI, Flask, Node.js, REST APIs<br>
+        <strong>Cloud & DevOps:</strong> Azure (OpenAI, Cosmos DB, Blob Storage), Kubernetes, Docker, CI/CD<br>
+        <strong>AI/ML & Data:</strong> TensorFlow, PyTorch, scikit-learn, pandas, NumPy, RAG, PySpark<br>
+        <strong>Databases:</strong> PostgreSQL, Redis, Cosmos DB<br>
+        <strong>Visualization:</strong> Power BI, Tableau, Gradio<br>
+        <strong>Collaboration:</strong> Agile, Git, Documentation, Stakeholder Communication
       </div>
     </div>
   </div>
