@@ -10,37 +10,37 @@
   <style>
     body {
       font-family: "Computer Modern Serif", "Computer Modern", "Times New Roman", Times, serif;
-      font-size: 11.5pt;
-      line-height: 1.2;
+      font-size: 10pt;
+      line-height: 1.15;
       margin: 0;
       padding: 0;
       background: white;
       color: black;
     }
-    
+
     .container {
       max-width: 8.5in;
       margin: 0 auto;
-      padding: 0.3in 0.6in 0.5in 0.6in;
+      padding: 0.2in 0.5in 0.3in 0.5in;
     }
-    
+
     /* Header */
     .header {
       text-align: center;
-      margin-bottom: 3px;
+      margin-bottom: 2px;
     }
-    
+
     .header h1 {
-      font-size: 24pt;
+      font-size: 20pt;
       font-weight: normal;
       margin: 0;
       text-transform: uppercase;
       letter-spacing: 2px;
     }
-    
+
     .contact-info {
-      margin-top: 2px;
-      font-size: 10.5pt;
+      margin-top: 1px;
+      font-size: 9.5pt;
     }
     
     .contact-info a {
@@ -54,28 +54,28 @@
     
     /* Sections */
     .section {
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 6px;
+      margin-bottom: 6px;
     }
-    
+
     .section-title {
-      font-size: 12pt;
+      font-size: 10.5pt;
       font-weight: bold;
       text-transform: uppercase;
       border-bottom: 1px solid black;
-      padding-bottom: 2px;
-      margin-bottom: 5px;
+      padding-bottom: 1px;
+      margin-bottom: 3px;
     }
-    
+
     /* Experience and Project Items */
     .experience-item, .project-item {
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
-    
+
     .item-header {
       display: table;
       width: 100%;
-      margin-bottom: 2px;
+      margin-bottom: 1px;
     }
     
     .item-row {
@@ -85,57 +85,57 @@
     .item-left {
       display: table-cell;
       font-weight: bold;
-      font-size: 10.5pt;
+      font-size: 9.5pt;
     }
 
     .item-right {
       display: table-cell;
       text-align: right;
       font-weight: bold;
-      font-size: 10.5pt;
+      font-size: 9.5pt;
     }
 
     .item-tech {
       font-style: italic;
-      font-size: 10.5pt;
-      margin-bottom: 3px;
+      font-size: 9pt;
+      margin-bottom: 2px;
     }
-    
+
     /* Bullet points */
     ul {
       margin: 0;
-      padding-left: 20px;
-      margin-bottom: 5px;
-    }
-    
-    li {
+      padding-left: 18px;
       margin-bottom: 2px;
-      font-size: 10.5pt;
     }
-    
+
+    li {
+      margin-bottom: 1px;
+      font-size: 9.5pt;
+    }
+
     /* Education */
     .education-item {
-      margin-bottom: 5px;
+      margin-bottom: 3px;
     }
-    
+
     .education-header {
       display: flex;
       justify-content: space-between;
       font-weight: bold;
-      font-size: 10.5pt;
+      font-size: 9.5pt;
     }
 
     .education-details {
       display: flex;
       justify-content: space-between;
       font-style: italic;
-      font-size: 9.5pt;
+      font-size: 8.5pt;
     }
-    
+
     /* Skills */
     .skills-list {
-      font-size: 10.5pt;
-      line-height: 1.4;
+      font-size: 9.5pt;
+      line-height: 1.3;
     }
     
     .skills-list strong {
@@ -152,101 +152,19 @@
       font-weight: bold;
     }
     
-    /* Print styles to ensure one page */
+    /* Print styles */
     @media print {
-      body {
-        margin: 0;
-        font-size: 10pt;
-        line-height: 1.15;
-      }
-      
-      .container {
-        max-width: 100%;
-        padding: 0.2in 0.4in 0.3in 0.4in;
-        margin: 0;
-      }
-      
-      .section {
-        margin-top: 8px;
-        margin-bottom: 8px;
-      }
-      
-      .section-title {
-        font-size: 11pt;
-        margin-bottom: 3px;
-        padding-bottom: 1px;
-      }
-      
-      .header h1 {
-        font-size: 20pt;
-        margin-bottom: 2px;
-      }
-      
-      .contact-info {
-        font-size: 9pt;
-        margin-top: 1px;
-      }
-      
-      .experience-item, .project-item {
-        margin-bottom: 8px;
-      }
-      
-      .education-item {
-        margin-bottom: 4px;
-      }
-      
-      ul {
-        margin-bottom: 3px;
-        padding-left: 18px;
-      }
-      
-      li {
-        margin-bottom: 1px;
-        font-size: 9.5pt;
-      }
-      
-      .item-left, .item-right {
-        font-size: 9.5pt;
-      }
-      
-      .item-tech {
-        font-size: 9pt;
-        margin-bottom: 2px;
-      }
-      
-      .education-header {
-        font-size: 9.5pt;
-      }
-      
-      .education-details {
-        font-size: 8.5pt;
-      }
-      
-      .skills-list {
-        font-size: 9pt;
-        line-height: 1.3;
-      }
-      
-      /* Force page breaks */
       @page {
         size: letter;
-        margin: 0.5in;
+        margin: 0.35in 0.45in;
       }
-      
-      /* Prevent page breaks */
+      body { margin: 0; }
+      .container { max-width: 100%; padding: 0; margin: 0; }
       .section, .experience-item, .project-item, .education-item {
-        page-break-inside: avoid;
-        break-inside: avoid;
+        page-break-inside: avoid; break-inside: avoid;
       }
-
       .header, .section-title {
-        page-break-after: avoid;
-        break-after: avoid;
-      }
-
-      ul {
-        page-break-inside: avoid;
-        break-inside: avoid;
+        page-break-after: avoid; break-after: avoid;
       }
     }
   </style>
@@ -315,16 +233,35 @@
       <div class="experience-item">
         <div class="item-header">
           <div class="item-row">
-            <div class="item-left">Software Engineer Intern (Co-op) | Kinectrics | Toronto, ON</div>
+            <div class="item-left">Software Engineer | PUMA SE | Hong Kong</div>
+            <div class="item-right">Nov. 2025 – Present</div>
+          </div>
+        </div>
+        <div class="item-tech">FastAPI, SvelteKit, Rust, Apache Kafka, AWS Bedrock, PostgreSQL, Redis, Docker, S3, Terraform, GitHub Actions</div>
+        <ul>
+          <li>Built <strong>AI chatbot</strong> with <strong>real-time streaming UI</strong> via <strong>SvelteKit</strong> and <strong>Server-Sent Events</strong> for natural language interaction with internal systems across global data</li>
+          <li>Designed <strong>multi-agent LLM pipeline</strong> with intent classification, task routing, and response generation via <strong>Kafka</strong> event-driven architecture</li>
+          <li>Assisted with <strong>Terraform</strong> IaC for provisioning AWS resources including <strong>ECS</strong>, <strong>RDS</strong>, <strong>ElastiCache</strong>, and <strong>S3</strong> across staging and production</li>
+          <li>Performed QA on <strong>CI/CD pipelines</strong> built with <strong>GitHub Actions</strong> for automated testing, Docker image builds, and deployment to <strong>AWS ECS</strong></li>
+          <li>Developed high-concurrency, high-throughput <strong>Rust</strong> backend service with async <strong>PostgreSQL</strong> queries and automated Excel report generation stored in <strong>S3</strong></li>
+          <li>Implemented persistent chat sessions with <strong>Redis Streams</strong>, enabling users to resume conversations and view full history across page reloads</li>
+          <li>Implemented <strong>JWT</strong> authentication with role-based access control and automated email notifications</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="item-header">
+          <div class="item-row">
+            <div class="item-left">Software Engineer Intern | Kinectrics | Toronto, ON</div>
             <div class="item-right">Jun. 2025 – Aug. 2025</div>
           </div>
         </div>
         <div class="item-tech">Azure OpenAI, Azure Blob Storage, Azure Cosmos DB, Next.js 15, React 19, FastAPI, PostgreSQL, Redis</div>
         <ul>
-          <li>Built enterprise AI chat platform powered by <strong>Azure OpenAI</strong> with Next.js 15/React 19 frontend, reducing response latency from 500ms to sub-200ms (60% improvement)</li>
-          <li>Processed 10,000+ user queries through <strong>Azure-integrated RAG pipeline</strong> with Redis vector store, achieving 95% accuracy in context retrieval</li>
-          <li>Architected cloud-native file management with <strong>Azure Blob Storage</strong> using <strong>SAS tokens</strong> and <strong>Azure Cosmos DB</strong>, reducing backend load by 80% and supporting 5GB uploads</li>
-          <li>Implemented <strong>vector embedding cache</strong> with <strong>Redis</strong> to store pre-computed document embeddings and <strong>semantic search results</strong>, reducing Azure OpenAI API calls by <strong>35%</strong> and Cosmos DB vector queries by <strong>40%</strong></li>
+          <li>Built enterprise AI chat platform with <strong>Azure OpenAI</strong>, <strong>Next.js 15</strong>, and <strong>React 19</strong> frontend</li>
+          <li>Implemented <strong>RAG pipeline</strong> with <strong>Redis</strong> vector store for context retrieval and document Q&A</li>
+          <li>Architected file management with <strong>Azure Blob Storage</strong>, <strong>SAS tokens</strong>, and <strong>Azure Cosmos DB</strong></li>
+          <li>Built <strong>vector embedding cache</strong> with <strong>Redis</strong> for pre-computed embeddings and <strong>semantic search</strong></li>
         </ul>
       </div>
 
@@ -337,9 +274,9 @@
         </div>
         <div class="item-tech">TensorFlow, scikit-learn, Flask, FastAPI, Python</div>
         <ul>
-          <li>Developed prototype models with <strong>TensorFlow</strong>, <strong>scikit-learn</strong>, and <strong>Naive Bayes</strong> to analyze customer behavior and support recommendation features</li>
-          <li>Built <strong>Flask dashboards</strong> to visualize business analytics for internal teams and delivered presentations to non-technical stakeholders</li>
-          <li>Provided technical assistance to users on <strong>ERP platform</strong>, troubleshooting issues and supporting system adoption</li>
+          <li>Built recommendation models with <strong>TensorFlow</strong>, <strong>scikit-learn</strong>, and <strong>Naive Bayes</strong> for personalized product suggestions</li>
+          <li>Developed <strong>Flask</strong> dashboards for business analytics visualization</li>
+          <li>Provided technical support on <strong>ERP platform</strong>, troubleshooting and system adoption</li>
         </ul>
       </div>
     </div>
@@ -351,16 +288,15 @@
       <div class="project-item">
         <div class="item-header">
           <div class="item-row">
-            <div class="item-left">Microsoft Fabric and AI Learning Hackathon</div>
+            <div class="item-left">Microsoft Fabric and AI Learning Hackathon <span style="font-weight:normal;font-size:8.5pt">[<a href="https://github.com/choisiulun1/Research_Of_Research">GitHub</a>] [<a href="https://devpost.com/software/research-of-research">Devpost</a>]</span></div>
             <div class="item-right">Nov. 2024</div>
           </div>
         </div>
         <div class="item-tech">PySpark, Azure Cosmos DB, Microsoft Fabric, OpenAI, Power Automate, Power BI</div>
         <ul>
-          <li>Won <strong>Best Azure Cosmos DB + Microsoft Fabric Integration Award</strong> among <strong>4499 participants</strong> and <strong>200+ teams</strong> for research analysis platform</li>
-          <li>Built <strong>ETL pipelines</strong> processing <strong>10,000+ papers</strong> with PySpark and <strong>Azure RAG</strong> for paper Q&A</li>
-          <li>Automated report delivery with <strong>Power Automate</strong> and created interactive dashboards in <strong>Power BI</strong> for research insights visualization</li>
-          <li>[<a href="https://github.com/choisiulun1/Research_Of_Research">GitHub</a>] [<a href="https://devpost.com/software/research-of-research">Devpost</a>]</li>
+          <li>Won <strong>Best Azure Cosmos DB + Microsoft Fabric Integration Award</strong></li>
+          <li>Built <strong>ETL pipelines</strong> with <strong>PySpark</strong> and <strong>Azure RAG</strong> for paper Q&A</li>
+          <li>Automated report delivery with <strong>Power Automate</strong> and created interactive dashboards in <strong>Power BI</strong></li>
         </ul>
       </div>
 
@@ -373,9 +309,9 @@
         </div>
         <div class="item-tech">Python, Flask, PostgreSQL, Gradio</div>
         <ul>
-          <li>Developed <strong>ensemble detector</strong> achieving <strong>80% accuracy</strong> on XSum and SQuAD datasets for AI-generated content detection</li>
-          <li>Combined <strong>soft watermarking</strong> with <strong>perplexity scoring</strong> to balance recall and false positive rates for reliable detection</li>
-          <li>Built web application with <strong>Gradio UI</strong> enabling batch document processing for educator use cases</li>
+          <li>Developed <strong>ensemble detector</strong> on XSum and SQuAD datasets for AI-generated content detection</li>
+          <li>Combined <strong>soft watermarking</strong> with <strong>perplexity scoring</strong> for balanced recall and false positive rates</li>
+          <li>Built web app with <strong>Gradio UI</strong> for batch document processing</li>
         </ul>
       </div>
 
@@ -388,9 +324,9 @@
         </div>
         <div class="item-tech">PyTorch, StyleGAN, ResNet50, MobileNetV2, YOLOv5</div>
         <ul>
-          <li>Built system localizing <strong>19 facial keypoints</strong> comparing ResNet50, MobileNetV2, and YOLOv5 architectures</li>
-          <li>Implemented <strong>StyleGAN augmentation</strong> with e4e encoder; ResNet50 achieved best test loss of <strong>&lt;2000</strong> vs YOLOv5's 16,111</li>
-          <li>Applied <strong>5x data augmentation</strong> to handle pose variations in facial landmark detection</li>
+          <li>Built facial keypoint detection system comparing <strong>ResNet50</strong>, <strong>MobileNetV2</strong>, and <strong>YOLOv5</strong></li>
+          <li>Implemented <strong>StyleGAN augmentation</strong> with e4e encoder for synthetic training data generation</li>
+          <li>Applied data augmentation pipeline to handle pose variations in landmark detection</li>
         </ul>
       </div>
     </div>
@@ -399,13 +335,12 @@
     <div class="section">
       <div class="section-title">Technical Skills</div>
       <div class="skills-list">
-        <strong>Programming:</strong> Python, JavaScript, C++, SQL<br>
-        <strong>Web Development:</strong> React, Next.js, FastAPI, Flask, Node.js, REST APIs<br>
-        <strong>Cloud & DevOps:</strong> Azure (OpenAI, Cosmos DB, Blob Storage), Kubernetes, Docker, CI/CD<br>
-        <strong>AI/ML & Data:</strong> TensorFlow, PyTorch, scikit-learn, pandas, NumPy, RAG, PySpark<br>
-        <strong>Databases:</strong> PostgreSQL, Redis, Cosmos DB<br>
-        <strong>Visualization:</strong> Power BI, Tableau, Gradio<br>
-        <strong>Collaboration:</strong> Agile, Git, Documentation, Stakeholder Communication
+        <strong>Programming:</strong> Python, JavaScript, C++, SQL &nbsp;
+        <strong>Web:</strong> React, Next.js, SvelteKit, FastAPI, Flask, Node.js<br>
+        <strong>Cloud & DevOps:</strong> Azure (OpenAI, Cosmos DB, Blob Storage), AWS (Bedrock, S3, ECS), Terraform, GitHub Actions, Kubernetes, Docker<br>
+        <strong>AI/ML & Data:</strong> TensorFlow, PyTorch, scikit-learn, pandas, NumPy, RAG, PySpark &nbsp;
+        <strong>DB:</strong> PostgreSQL, Redis, Cosmos DB<br>
+        <strong>Tools:</strong> Kafka, Power BI, Tableau, Gradio, Git, Agile
       </div>
     </div>
   </div>
